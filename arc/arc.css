@@ -1,0 +1,138 @@
+body {
+    background-color: #00C2FF;
+}
+
+.nav {
+    background-color: #0085FF;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.center {
+    text-align: center;
+}
+
+.arc, .episode {
+    background-color: #00A3FF;
+}
+
+.arc{
+    border: 3px solid rgb(47, 0, 255);
+}
+
+img {
+    width: 35%;
+}
+
+h4 {
+    padding: 5px;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+.container {
+    min-height: 100vh;
+    background-color: #00A3FF;
+}
+
+.homepage{
+    cursor: pointer;
+    background: cyan;
+    transition: 0.4s;
+    margin: 0;
+    height: 45px;
+    border: 1px solid darkblue;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    padding: 10px;
+}
+
+.homepage:hover {
+    background: darkblue;
+}
+
+.homepage:hover > a {
+    color: white;
+}
+
+.historical{
+    cursor: pointer;
+    background: cyan;
+    transition: 0.4s;
+    margin: 0;
+    height: 45px;
+    border: 1px solid darkblue;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    padding: 10px;
+}
+
+.historical:hover {
+    background:rgb(0, 119, 255);
+}
+
+.historical:hover > a {
+    color: white;
+}
+
+.deco{
+    cursor: pointer;
+    background: cyan;
+    transition: 0.4s;
+    margin: 0;
+    height: 45px;
+    border: 1px solid darkblue;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    padding: 10px;
+}
+
+.deco:hover {
+    background: red;
+}
+
+.deco:hover > a {
+    color: white;
+}
+
+button {
+    cursor: pointer;
+    background: cyan;
+    transition: 0.4s;
+    margin: 10px;
+    height: 45px;
+    border: 1px solid darkblue;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+button:hover {
+    background: blue;
+}
+
+#historical > a > h2 {
+    cursor: pointer;
+    background: cyan;
+    transition: 0.4s;
+    margin: 0;
+    height: 45px;
+    border: 1px solid darkblue;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    padding: 10px;
+}
+
+#historical > a > h2:hover {
+    background:rgb(0, 119, 255);
+}
+
+#historical > a > h2:hover {
+    color: white;
+}
+
+#historical > a:hover {
+    color: white;
+}

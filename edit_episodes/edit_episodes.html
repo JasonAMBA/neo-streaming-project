@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../edit_episodes/edit_episodes.css">
+    <title>Edit episodes</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <section class="flex">
+        <div>
+            <form>
+                <fieldset>
+                    <div><h1>Editer les épisodes ?</h1></div>
+                    <div>
+                        <input type="text" id="id_episode" hidden>
+                    </div>
+                    <br>
+                    <div>
+                        <p>Episode numéro :</p>
+                        <input type="number" id="number">
+                    </div>
+                    <br>
+                    <div>
+                        <p>Nom de l'episode :</p>
+                        <input type="text" id="name">
+                    </div>
+                    <br>
+                    <div>
+                        <p>lien de l'épisode :</p>
+                        <input type="text" id="video">
+                    </div>
+                    <br>
+                    <div>
+                        <p>Arc :</p>
+                        <select id="arc"></select>
+                    </div>
+                    <br>
+                    <input type="submit" value="ajouter l'episode">
+                    <p>Retourner à l'<a href="../admin/admin.html">accueil</a></p>
+                    <p id="error"></p>
+                </fieldset>
+            </form>
+        </div>
+        <div>
+            <table>
+                <tr>
+                    <th>Numéro de l'episode</th>
+                    <th>titre de l'episode</th>
+                    <th>Video</th>
+                    <th>Arc </th>
+                    <th>Manga</th>
+                    <th>Supprimer</th>
+                </tr>
+            </table>
+        </div>
+    </section>
+</body>
+<script src="../edit_episodes/edit_episodes.js"></script>
+</html>

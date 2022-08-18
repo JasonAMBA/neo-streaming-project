@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../edit_mangas/edit_mangas.css">
+    <title>Edit mangas</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <section class="flex">
+        <div>
+            <form class="center">
+                <fieldset>
+                    <div><h1>Editer les mangas ?</h1></div>
+                    <div>
+                        <input type="text" id="id_manga" hidden>
+                    </div>
+                    <br>
+                    <div>
+                        <p>Nom du manga :</p>
+                        <input type="text" id="name">
+                    </div>
+                    <br>
+                    <div>
+                        <p>Résumé :</p>
+                        <textarea id="summary" cols="30" rows="20"></textarea>
+                    </div>
+                    <br>
+                    <div>
+                        <p>Chemin du logo :</p>
+                        <input type="text" id="logo">
+                    </div>
+                    <br>
+                    <div>
+                        <p>Auteur :</p>
+                        <input type="text" id="author">
+                    </div>
+                    <br>
+                    <div>
+                        <p>Date de sortie :</p>
+                        <input type="date" id="release">
+                    </div>
+                    <br>
+                    <div>
+                        <p>Nombre d'episodes :</p>
+                        <input type="number" id="number_episodes">
+                    </div>
+                    <br>
+                    <div>
+                        <p>Nombre d'arcs:</p>
+                        <input type="number" id="number_arcs">
+                    </div>
+                    <br>
+                    <input type="submit" value="Ajouter le manga">
+                    <input type="button" id="cancelUpdate" value="Annuler">
+                    <p>Retourner à l'<a href="../admin/admin.html">accueil</a></p>
+                    <p id="error"></p>
+                </fieldset>
+             </form>
+        </div>
+        <div>
+            <table>
+                <tr>
+                    <th>Nom du manga</th>
+                    <th>Résumé</th>
+                    <th>Logo</th>
+                    <th>Auteur</th>
+                    <th>Date de sortie : </th>
+                    <th>Nombre d'épisodes</th>
+                    <th>Nombre d'arcs</th>
+                    <th>Modifier</th>
+                    <th>Supprimer</th>
+                </tr>
+            </table>
+        </div>
+    </section>
+    
+</body>
+<script src="../edit_mangas/edit_mangas.js"></script>
+</html>

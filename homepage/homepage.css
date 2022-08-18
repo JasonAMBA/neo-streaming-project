@@ -1,0 +1,166 @@
+body {
+    background-color: #85D6FA;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.newnav{
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    background-color: #0D78B5;
+    padding: 10px;
+}
+
+.title > h1 {
+    padding: 7px;
+}
+
+.container {
+    background-image: linear-gradient(to right, blue, skyblue);
+    min-height: 110vh;
+}
+
+.center {
+    text-align: center;
+    padding: 15px;
+}
+
+h1,p{
+    margin: 0;
+}
+
+
+.deco{
+    cursor: pointer;
+    background: cyan;
+    transition: 0.4s;
+    margin: 0;
+    height: 45px;
+    border: 1px solid darkblue;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    padding: 10px;
+}
+
+.deco:hover {
+    background: red;
+}
+
+.deco:hover > a {
+    color: white;
+}
+
+.register{
+    cursor: pointer;
+    background: cyan;
+    transition: 0.4s;
+    margin: 0;
+    height: 45px;
+    border: 1px solid darkblue;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    padding: 10px;
+}
+
+.register:hover {
+    background: green;
+}
+
+.register:hover > a {
+    color: white;
+}
+
+.login{
+    cursor: pointer;
+    background: cyan;
+    transition: 0.4s;
+    margin: 0;
+    height: 45px;
+    border: 1px solid darkblue;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    padding: 10px;
+}
+
+.login:hover {
+    background: gold;
+}
+
+.login:hover > a {
+    color: white;
+}
+
+.img {
+    width: auto;
+}
+
+#historical > a > h2 {
+    cursor: pointer;
+    background: cyan;
+    transition: 0.4s;
+    margin: 0;
+    height: 45px;
+    border: 1px solid darkblue;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    padding: 10px;
+}
+
+#historical > a > h2:hover {
+    background:rgb(0, 119, 255);
+    color: white;
+}
+
+#historical > a:hover {
+    color: white;
+}
+
+.font{
+    font-size:x-large;
+}
+
+#update > a > h2 {
+    cursor: pointer;
+    background: cyan;
+    transition: 0.4s;
+    margin: 0;
+    height: 45px;
+    border: 1px solid darkblue;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    padding: 10px;
+}
+
+#update > a > h2:hover{
+    background:turquoise;
+}
+
+#update > a:hover{
+    color: white;
+}
+
+a > img {
+    width: 35%;
+    margin: 15px;
+}
+
+a > img:hover {
+    border: 3px solid skyblue;
+    padding: 15px;
+    
+}
+
+#manga {
+    text-align: center;
+    padding: 15px;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../edit_arcs/edit_arcs.css">
+    <title>Edit arcs</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <section class="flex">
+        <div>
+            <form>
+                <fieldset>
+                    <div><h1>Editer les arcs ?</h1></div>
+                    <div>
+                        <input type="text" id="id_arc" hidden>
+                    </div>
+                    <br>
+                    <div>
+                        <p>Arc numéro :</p>
+                        <input type="number" id="arc_number">
+                    </div>
+                    <br>
+                    <div>
+                        <p>Nom de l'arc :</p>
+                        <input type="text" id="name">
+                    </div>
+                    <br>
+                    <div>
+                        <p>Image :</p>
+                        <input type="text" id="picture">
+                    </div>
+                    <br>
+                    <div>
+                        <p>Manga :</p>
+                        <select name="" id="manga"></select>
+                    </div>
+                    <br>
+                    <div>
+                        <p>synopsis :</p>
+                        <textarea id="synopsis" cols="30" rows="20"></textarea>
+                    </div>
+                    <input type="submit" value="ajouter l'arc">
+                    <input type="button" id="cancelUpdate" value="Annuler">
+                    <p>Retourner à l'<a href="../admin/admin.html">accueil</a></p>
+                    <p id="error"></p>
+                </fieldset>
+            </form>
+        </div>
+        <div>
+            <table>
+                <tr>
+                    <th>Numéro de l'arc</th>
+                    <th>Nom de l'arc</th>
+                    <th>Synopsis</th>
+                    <th>Image</th>
+                    <th>Manga </th>
+                    <th>Modifier </th>
+                    <th>Supprimer</th>
+                </tr>
+            </table>
+        </div>
+    </section>
+</body>
+<script src="../edit_arcs/edit_arcs.js"></script>
+</html>

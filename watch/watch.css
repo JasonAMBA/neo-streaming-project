@@ -1,0 +1,73 @@
+body {
+    background-color: #85D6FA;
+}
+
+.center{
+    text-align: center;
+    padding: 25px;
+}
+
+.nav {
+    background-color: #00C2FF;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+h2{
+    margin: 0;
+}
+
+.container{
+    background-color: #0066FF;
+    min-height: 100vh;
+}
+
+hr{
+    color: black;
+    padding: 1px;
+}
+
+.homepage{
+    cursor: pointer;
+    background: cyan;
+    transition: 0.4s;
+    margin: 0;
+    height: 45px;
+    border: 1px solid darkblue;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    padding: 10px;
+}
+
+.homepage:hover {
+    background: darkblue;
+}
+
+.homepage:hover > a {
+    color: white;
+}
+
+.deco, .delete{
+    cursor: pointer;
+    background: cyan;
+    transition: 0.4s;
+    margin: 0;
+    height: 45px;
+    border: 1px solid darkblue;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    padding: 10px;
+}
+
+.deco:hover, .delete:hover {
+    background: red;
+}
+
+.deco:hover > a {
+    color: white;
+}
+
+.delete:hover {
+    color: white;
+}

@@ -1,0 +1,39 @@
+body {
+    background-color: #85D6FA;
+}
+
+.center {
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+form {
+    width: auto;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td,
+th {
+    border: 3px solid rgb(0, 179, 250);
+    padding: 15px;
+}
+
+th {
+    background-color: rgb(0, 225, 255);
+    padding: 15px;
+}
+
+fieldset {
+    padding: 40px;
+}
+
+img {
+    width: 200px;
+}
