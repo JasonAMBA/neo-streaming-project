@@ -133,14 +133,7 @@ function updateArc(id, arc_number, name, picture, manga, synopsis) {
         dataType: 'json',
         success: (res, status) => {
             if (res.success) {
-                const updateArc = "<td>" + arc_number + "</td>" +
-                    "<td>" + name + "</td>" + 
-                    "<td>" + synopsis + "</td>" +
-                    "<td>" + "img src='" + "../mangas/" + picture + "'>" + "</td>" +
-                    "<td>" + "img src='" + "../mangas/" + manga + "'>" + "</td>" +
-                    "<td><button onclick='wantToUpdate(" + id + ")'>Modifier</button></td>" +
-                    "<td><button onclick='wantToDelete(" + id + ", " + name_arc + ")'>Supprimer</button></td>";
-                $('#tr-' + id).html(updateArc);
+                alert("arc mis à jour ! Veuillez recharger la page.")
             } else $("error").html(res.msg);
 
             document.querySelector('form').reset();

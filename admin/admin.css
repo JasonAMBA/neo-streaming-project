@@ -156,3 +156,44 @@ a > img {
     margin: 15px;
 
 }
+
+#update > a > h2 {
+    cursor: pointer;
+    background: cyan;
+    transition: 0.4s;
+    margin: 0;
+    height: 45px;
+    border: 1px solid darkblue;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    padding: 10px;
+}
+
+#update > a > h2:hover{
+    background:rgb(255, 102, 0);
+}
+
+#update > a:hover{
+    color: white;
+}
+
+#historical > a > h2 {
+    cursor: pointer;
+    background: cyan;
+    transition: 0.4s;
+    margin: 0;
+    height: 45px;
+    border: 1px solid darkblue;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    padding: 10px;
+}
+
+#historical > a > h2:hover {
+    background:rgb(255, 208, 0);
+    color: white;
+}
+
+#historical > a:hover {
+    color: white;
+}

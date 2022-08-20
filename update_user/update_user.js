@@ -66,3 +66,7 @@ function getUser(id) {
 }
 
 user_id ? getUser(user_id) : alert('error');
+
+if (JSON.parse(localStorage.getItem('user')).is_admin == 1) {
+    $("#redirection").prop("href", "../admin/admin.html");
+}
