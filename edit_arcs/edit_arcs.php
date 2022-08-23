@@ -15,7 +15,12 @@ switch ($method['choice']) {
         break;
 
     case 'insert':
-        if (isset($method['arc_number'], $method['name'], $method['picture'], $method['manga'], $method['synopsis']) && trim($method['arc_number']) != '' && trim($method['name']) != '' && trim($method['picture']) != '' && trim($method['manga']) != '' && trim($method['synopsis']) != '') {
+        if (isset($method['arc_number'], $method['name'], $method['picture'], $method['manga'], $method['synopsis']) 
+        && trim($method['arc_number']) != '' 
+        && trim($method['name']) != '' 
+        && trim($method['picture']) != '' 
+        && trim($method['manga']) != '' 
+        && trim($method['synopsis']) != '') {
 
             $sql = "INSERT INTO arc (arc_number, name_arc, picture, id_manga, synopsis) VALUES (:arc_number, :name, :picture, :manga, :synopsis)"; 
             $req = $pdo->prepare($sql);
@@ -40,7 +45,12 @@ switch ($method['choice']) {
         break;
 
     case 'update':
-        if (isset($method['arc_number'], $method['name'], $method['picture'], $method['manga'], $method['synopsis']) && trim($method['arc_number']) != '' && trim($method['name']) != '' && trim($method['picture']) != '' && trim($method['manga']) != '' && trim($method['synopsis']) != '') {
+        if (isset($method['arc_number'], $method['name'], $method['picture'], $method['manga'], $method['synopsis']) 
+        && trim($method['arc_number']) != '' 
+        && trim($method['name']) != '' 
+        && trim($method['picture']) != '' 
+        && trim($method['manga']) != '' 
+        && trim($method['synopsis']) != '') {
 
             $sql = "UPDATE arc SET arc_number = :arc_number, name_arc = :name, picture = :picture, id_manga = :manga, synopsis = :synopsis WHERE id_arc = {$method['id']}";
             $req = $pdo->prepare($sql);

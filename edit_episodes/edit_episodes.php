@@ -15,7 +15,11 @@ switch ($method['choice']) {
         break;
 
     case 'insert':
-        if (isset($method['number'], $method['name'], $method['video'], $method['arc']) && trim($method['number']) != '' && trim($method['name']) != '' && trim($method['video']) != ''&& trim($method['arc']) != '') {
+        if (isset($method['number'], $method['name'], $method['video'], $method['arc']) 
+        && trim($method['number']) != '' 
+        && trim($method['name']) != '' 
+        && trim($method['video']) != '' 
+        && trim($method['arc']) != '') {
 
             $sql = "INSERT INTO episode (number_episode, titre_episode, video, id_arc) VALUES (:number_episode, :name, :video, :arc)"; 
             $req = $pdo->prepare($sql);

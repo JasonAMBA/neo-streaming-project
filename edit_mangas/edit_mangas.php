@@ -15,7 +15,14 @@ switch ($method['choice']) {
         break;
     
     case 'insert':
-        if (isset($method['name'], $method['summary'], $method['logo'], $method['author'], $method['release'], $method['number_episodes'], $method['number_arcs']) && trim($method['name']) != '' && trim($method['summary']) != '' && trim($method['logo']) != '' && trim($method['author']) != '' && trim($method['release']) != '' && trim($method['number_episodes']) != '' && trim($method['number_arcs']) != '') {
+        if (isset($method['name'], $method['summary'], $method['logo'], $method['author'], $method['release'], $method['number_episodes'], $method['number_arcs'])
+        && trim($method['name']) != '' 
+        && trim($method['summary']) != '' 
+        && trim($method['logo']) != '' 
+        && trim($method['author']) != '' 
+        && trim($method['release']) != '' 
+        && trim($method['number_episodes']) != '' 
+        && trim($method['number_arcs']) != '') {
 
             $sql = "INSERT INTO manga (name, summary, logo, author, release_date, number_episodes, number_arcs) VALUES (:name, :summary, :logo, :author, :release, :number_episodes, :number_arcs)";
             $req = $pdo->prepare($sql);
@@ -42,7 +49,14 @@ switch ($method['choice']) {
         break;
 
     case 'update':
-        if (isset($method['name'], $method['summary'], $method['logo'], $method['author'], $method['release'], $method['number_episodes'], $method['number_arcs'], $method['id']) && trim($method['name']) != '' && trim($method['summary']) != '' && trim($method['logo']) != '' && trim($method['author']) != '' && trim($method['release']) != '' && trim($method['number_episodes']) != '' && trim($method['number_arcs']) != '') {
+        if (isset($method['name'], $method['summary'], $method['logo'], $method['author'], $method['release'], $method['number_episodes'], $method['number_arcs'], $method['id']) 
+        && trim($method['name']) != '' 
+        && trim($method['summary']) != '' 
+        && trim($method['logo']) != '' 
+        && trim($method['author']) != '' 
+        && trim($method['release']) != '' 
+        && trim($method['number_episodes']) != '' 
+        && trim($method['number_arcs']) != '') {
 
             $sql = "UPDATE manga SET name = :name, summary = :summary, logo = :logo, author = :author, release_date = :release, number_episodes = :number_episodes, number_arcs = :number_arcs WHERE id_manga = {$method['id']}";
             $req = $pdo->prepare($sql);
